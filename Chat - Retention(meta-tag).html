@@ -35,6 +35,17 @@
 
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
+		
+		embedded_svc.settings.extraPrechatFormDetails = [
+			{
+				"label": "Lead Source",
+				"name":"LeadSource",
+				"value":"Chat",  // TXU-identifier
+				"displayToAgent":false
+			}
+		]; 
+		
+		
 
 		embedded_svc.init(
 			'https://vistraenergy--dev.my.salesforce.com',
